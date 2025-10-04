@@ -1,0 +1,114 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f8fc;
+  color: #222;
+}
+header {
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav a:hover { text-decoration: underline; }
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0077cc;
+  color: white;
+}
+.banner h2 { font-size: 32px; margin-bottom: 20px; }
+.banner input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.banner button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.banner button:hover { background-color: #e6b800; }
+.quiz-box {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.answer-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #fff;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.answer-btn:hover { background: #e6f2ff; }
+.persons {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #e6f2ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.persons h2 { color: #0077cc; margin-bottom: 20px; }
+.person {
+  display: block;
+  background: #ccc;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #0077cc;
+  text-decoration: none;
+}
+.person:hover { background: #bbb; }
+.rating {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.scoreboard {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff5cc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}

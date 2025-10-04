@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Қазақ әдебиеті</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Қазақ әдебиеті</h1>
+    <div id="username-box"></div>
+    <nav>
+      <a onclick="showSection('home')">Басты</a>
+      <a onclick="showSection('quiz')">Ойын</a>
+      <a onclick="showSection('rating')">Рейтинг</a>
+      <a onclick="showSection('persons')">Тұлғалар</a>
+    </nav>
+  </header>
+
+  <!-- Басты бет -->
+  <div id="home" class="banner">
+    <h2>Қазақ әдебиетін қаншалықты білесіз?</h2>
+    <input type="text" id="nickname" placeholder="Никнейм енгізіңіз">
+    <button onclick="setUser()">Кіру және ойынды бастау</button>
+  </div>
+
+  <!-- Ойын -->
+  <div id="quiz" class="quiz-box" style="display:none;"></div>
+
+  <!-- Рейтинг -->
+  <div id="rating" class="rating" style="display:none;">
+    <h2>Рейтинг</h2>
+    <ul id="rating-list"></ul>
+  </div>
+
+  <!-- Тұлғалар -->
+  <div id="persons" class="persons" style="display:none;">
+    <h2>Тұлғалар</h2>
+    <a href="person.html?name=Abai" class="person">Абай Құнанбаев</a>
+    <a href="person.html?name=Ahmet" class="person">Ахмет Байтұрсынұлы</a>
+    <a href="person.html?name=Alikhan" class="person">Әлихан Бөкейхан</a>
+    <a href="person.html?name=Mukhtar" class="person">Мұхтар Әуезов</a>
+  </div>
+
+  <!-- Ұпай кестесі -->
+  <div id="scoreboard" class="scoreboard" style="display:none;">
+    <h2>Ойыншылар ұпайы</h2>
+    <ul id="players-list"></ul>
+  </div>
+
+  <footer>
+    © 2025 Қазақ әдебиеті. Барлық құқықтар қорғалған.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Тұлға</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="person-name"></h1>
+  </header>
+  <main style="max-width:800px;margin:40px auto;padding:20px;background:#fff;border-radius:10px;">
+    <p id="person-info"></p>
+  </main>
+  <footer>
+    © 2025 Қазақ әдебиеті. Барлық құқықтар қорғалған.
+  </footer>
+
+  <script>
+    const data = {
+      Abai: "Абай Құнанбайұлы — қазақтың ұлы ақыны, философы.",
+      Ahmet: "Ахмет Байтұрсынұлы — қоғам қайраткері, ағартушы.",
+      Alikhan: "Әлихан Бөкейхан — Алаш Орда көсемі.",
+      Mukhtar: "Мұхтар Әуезов — әйгілі жазушы, драматург."
+    };
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    document.getElementById("person-name").innerText = name;
+    document.getElementById("person-info").innerText = data[name] || "Мәлімет табылмады.";
+  </script>
+  <a href="index.html">← Басты бетке қайту</a>
+</body>
+</html>
